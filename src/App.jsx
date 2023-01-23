@@ -7,7 +7,7 @@ function App() {
   const scollToRef = useRef();
 
   return (
-    <div className="scroll-smooth">
+    <>
       <header className="bg-main-400">
         <nav className="flex justify-between items-center text-white p-5">
           <a href="#" className="flex space-x-2 items-center font-poppins font-extrabold">
@@ -17,7 +17,7 @@ function App() {
           </a>
           <div className="flex justify-center items-start space-x-2">
             <button className="w-[1.4rem]">
-              <img src="src/assets/id.png" alt="Indonesian Flag" className="w-full p-[0.1rem]" />
+              <img src="id.png" alt="Indonesian Flag" className="w-full p-[0.1rem]" />
             </button>
             <button className="flex justify-center items-center">
               <Uis.UisApps />
@@ -28,7 +28,7 @@ function App() {
       <main>
         <section className="min-h-[90vh]">
           <div className="flex justify-center bg-main-400 pt-10">
-            <img src="src/assets/fachry.png" alt="Muh Fachry JK Luid" className="w-[70%]" />
+            <img src="fachry.png" alt="Muh Fachry JK Luid" className="w-[70%]" />
           </div>
           <div className="px-5 pt-10">
             <h1 className="text-xl text-main-400 font-bold mb-1">Muh. Fachry J.K. Luid</h1>
@@ -53,7 +53,7 @@ function App() {
                 <span className="text-sm font-semibold">Javascript (ES6+)</span>
               </div>
               <div className="flex items-center space-x-2 border-2 border-[#06b6d4] py-1 px-2 rounded-lg">
-                <span className="w-5"><img src="src/assets/tailwind-css.svg" alt="Tailwind CSS" /></span>
+                <span className="w-5"><img src="tailwind-css.svg" alt="Tailwind CSS" /></span>
                 <span className="text-sm font-semibold">Tailwind CSS</span>
               </div>
               <div className="flex items-center space-x-2 border-2 border-[#61dafb] py-1 px-2 rounded-lg">
@@ -61,7 +61,7 @@ function App() {
                 <span className="text-sm font-semibold">React JS</span>
               </div>
               <div className="flex items-center space-x-2 border-2 border-[#539e43] py-1 px-2 rounded-lg">
-                <span className="w-5"><img src="src/assets/node-js.svg" alt="Tailwind CSS" /></span>
+                <span className="w-5"><img src="node-js.svg" alt="Tailwind CSS" /></span>
                 <span className="text-sm font-semibold">Node JS</span>
               </div>
               <div className="flex items-center space-x-2 border-2 border-[#61dafb] py-1 px-2 rounded-lg">
@@ -69,7 +69,7 @@ function App() {
                 <span className="text-sm font-semibold">React Native</span>
               </div>
               <div className="flex items-center space-x-2 border-2 border-[#ff2d20] py-1 px-2 rounded-lg">
-              <span className="w-5"><img src="src/assets/laravel.svg" alt="Tailwind CSS" /></span>
+              <span className="w-5"><img src="laravel.svg" alt="Tailwind CSS" /></span>
                 <span className="text-sm font-semibold">Laravel</span>
               </div>
             </div>
@@ -147,7 +147,7 @@ function App() {
           <h2 className="text-2xl text-main-400 font-bold mb-5 uppercase text-center">Hubungi Saya</h2>
         </section>
       </main>
-    </div>
+    </>
   )
 }
 
