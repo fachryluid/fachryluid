@@ -15,28 +15,28 @@ function App() {
             <span className="text-xl">fachiri</span>
             <small className="text-alt-400 text-sm">&#47;&#62;</small>
           </a>
-          <div className="flex justify-center items-start space-x-2">
-            <button className="w-[1.4rem]">
-              <img src="id.png" alt="Indonesian Flag" className="w-full p-[0.1rem]" />
+          <div className="flex justify-center items-center space-x-2">
+            <button className="font-extrabold border w-6 h-6 rounded">
+              ID
             </button>
             <button className="flex justify-center items-center">
-              <Uis.UisApps />
+              <Uis.UisApps className="w-6 h-6" />
             </button>
           </div>
         </nav>
       </header>
-      <main>
+      <main className="text-slate-800">
         <section className="min-h-[90vh]">
           <div className="flex justify-center bg-main-400 pt-10">
             <img src="fachry.png" alt="Muh Fachry JK Luid" className="w-[70%]" />
           </div>
           <div className="px-5 pt-10">
             <h1 className="text-xl text-main-400 font-bold mb-1">Muh. Fachry J.K. Luid</h1>
-            <h2 className="text-4xl font-semibold mb-3">Junior Developer</h2>
-            <p className="mb-3 font-semibold text-justify">Seorang <i>Freelancer</i> yang punya <i>passion</i> di bidang pengembangan perangkat lunak.</p>
+            <h2 className="text-4xl font-semibold mb-1">Junior Developer</h2>
+            <p className="mb-3 text-justify text-lg">Seorang freelancer yang punya passion di bidang pengembangan perangkat lunak.</p>
             <button onClick={() => scollToRef.current.scrollIntoView({behavior:"smooth"})} className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold text-lg rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
               <span>Hubungi Saya</span>
-              <Uil.UilMessage />
+              <Uil.UilEnvelope />
             </button>
           </div>
         </section>
@@ -143,8 +143,45 @@ function App() {
         <div className="bg-main-400/75 h-3"></div>
         <div className="bg-main-400/50 h-5"></div>
         <div className="bg-main-400/25 h-8 mb-10"></div>
-        <section ref={scollToRef} className="p-5 min-h-screen mb-10">
-          <h2 className="text-2xl text-main-400 font-bold mb-5 uppercase text-center">Hubungi Saya</h2>
+        <section ref={scollToRef} className="p-5 min-h-screen mb-10 flex flex-col space-y-5">
+          <h2 className="text-2xl text-main-400 font-bold uppercase text-center">Hubungi Saya</h2>
+          <p className="text-center">Inbox saya selalu terbuka. Jika kamu punya pertanyaan atau hanya ingin menyapa, saya akan mencoba yang terbaik untuk menghubungimu kembali!</p>
+          <div className="flex flex-col space-y-5 text-slate-500 text-base">
+            <div className="relative">
+              <input type="text" id="name" className="text-slate-800 block border-2 border-slate-500 px-4 py-3 w-full bg-transparent rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-main-400 peer" placeholder=" " />
+              <label htmlFor="name" className="absolute font-semibold peer-focus:text-base duration-300 transform -translate-y-4 scale-90 top-1 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-main-400 peer-placeholder-shown:scale-90 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-90 peer-focus:-translate-y-4 left-3 flex space-x-2 items-center">
+                <Uil.UilUser size="18" />
+                <span>Nama Lengkap</span>
+              </label>
+            </div>
+            <div className="relative">
+              <input type="email" id="email" className="text-slate-800 block border-2 border-slate-500 px-4 py-3 w-full bg-transparent rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-main-400 peer" placeholder=" " />
+              <label htmlFor="email" className="absolute font-semibold peer-focus:text-base duration-300 transform -translate-y-4 scale-90 top-1 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-main-400 peer-placeholder-shown:scale-90 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-90 peer-focus:-translate-y-4 left-3 flex space-x-2 items-center">
+                <Uil.UilAt size="18" />
+                <span>Email</span>
+              </label>
+            </div>
+            <div className="relative">
+              <input type="text" id="subject" className="text-slate-800 block border-2 border-slate-500 px-4 py-3 w-full bg-transparent rounded-lg appearance-none focus:outline-none focus:ring-0 focus:border-main-400 peer" placeholder=" " />
+              <label htmlFor="subject" className="absolute font-semibold peer-focus:text-base duration-300 transform -translate-y-4 scale-90 top-1 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-main-400 peer-placeholder-shown:scale-90 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-90 peer-focus:-translate-y-4 left-3 flex space-x-2 items-center">
+                <Uil.UilSubject size="18" />
+                <span>Subjek</span>
+              </label>
+            </div>
+            <div className="relative">
+              <textarea type="text" id="message" rows="4" className="text-slate-800 block border-2 border-slate-500 w-full bg-transparent rounded-lg appearance-none p-4 focus:outline-none focus:ring-0 focus:border-main-400 peer resize-none" placeholder=" " ></textarea>
+              <label htmlFor="message" className="absolute font-semibold peer-focus:text-base duration-300 transform -translate-y-4 scale-90 top-1 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-main-400 peer-placeholder-shown:scale-90 peer-placeholder-shown:-translate-y-12 peer-placeholder-shown:top-1/2 peer-focus:top-1 peer-focus:scale-90 peer-focus:-translate-y-4 left-3 flex space-x-2 items-center">
+                <Uil.UilEnvelopeAdd size="18" />
+                <span>Pesan</span>
+              </label>
+            </div>
+            <div className="flex justify-center">
+              <button className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold rounded-lg border-[3px] text-black border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
+                <span>Kirim Pesan</span>
+                <Uil.UilMessage />
+              </button>
+            </div>
+          </div>
         </section>
       </main>
     </>
