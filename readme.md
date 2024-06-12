@@ -1,41 +1,20 @@
-<h1 align="left" id="macropower-title">:wave: Hello there! I'm Fachry</h1>
+### About Me
+Hi, I'm Fachry. I graduated with a Bachelor's degree in Informatics Engineering from <a href="https://ung.ac.id">Universitas Negeri Gorontalo</a>. As a full-time freelancer, I specialize in software development, focusing on web and mobile applications.
 
-<picture>
-<source 
-  srcset="https://github-readme-stats.vercel.app/api?username=fachiri&show_icons=true&theme=dark"
-  media="(prefers-color-scheme: dark)"
-  align="right"  
-/>
-<source
-  srcset="https://github-readme-stats.vercel.app/api?username=fachiri&show_icons=true"
-  media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
-  align="right"
-/>
-<img src="https://github-readme-stats.vercel.app/api?username=fachiri&show_icons=true" align="right"/>
-</picture>
+While still in university, I started my journey as a freelancer in 2022, creating and maintaining software solutions for various clients. One notable project is the website for a private school in Gorontalo, which you can check out at <a href="https://ssnb.sch.id">ssnb.sch.id</a>. Additionally, you can explore other projects I've worked on at my personal website <a href="https://fachiri.my.id">fachiri.my.id</a>.
 
-- :office: &nbsp;I'm currently working at **Indonesia**
-- :seedling: &nbsp;I’m currently learning **Node.js**
-- :speech_balloon: &nbsp;I like to talk about **Tech** and **New Things**
-- :mailbox: &nbsp;Ask me anything on my **[issues page]**
-- :computer: &nbsp;Connect with me on **[LinkedIn]**
-
-[issues page]: https://github.com/fachiri/fachiri/issues "fachiri/issues"
-[linkedin]: https://www.linkedin.com/in/fachiri "Fachiri LinkedIn"
-
-
-<!--
-**fachiri/fachiri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning Node.js
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
+<p align="center">
+  <a href="https://github.com/fachiri?tab=repositories">
+    <img
+      align="center"
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=fachiri&layout=compact"
+    />
+  </a>
+  <a href="https://github.com/fachiri?tab=repositories">
+    <img
+      align="center"
+      height="165"
+      src="https://github-readme-stats.vercel.app/api?username=fachiri&count_private=true&show_icons=true&custom_title=Github%20Status&hide=issues"
+    />
+  </a>
+</p>
