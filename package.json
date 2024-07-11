@@ -12,7 +12,8 @@
     "@iconscout/react-unicons": "^1.1.6",
     "@iconscout/react-unicons-solid": "^0.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.24.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

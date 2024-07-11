@@ -1,30 +1,15 @@
-import React, { useRef } from 'react';
-import './App.css'
-import * as Uis from '@iconscout/react-unicons-solid';
 import * as Uil from '@iconscout/react-unicons';
+import React, { useRef } from 'react';
+import '../assets/css/App.css';
+import Navbar from '../components/Navbar';
+import { Link } from 'react-router-dom';
 
-function App() {
+export default function Home() {
   const scollToRef = useRef();
 
   return (
     <>
-      <header className="bg-main-400 sticky top-0 p-5">
-        <nav className="max-w-3xl mx-auto flex justify-between items-center text-white">
-          <a href="#" className="flex space-x-2 items-center font-poppins font-extrabold">
-            <small className="text-alt-400 text-sm">&#60;</small>
-            <span className="text-xl">fachiri</span>
-            <small className="text-alt-400 text-sm">&#47;&#62;</small>
-          </a>
-          <div className="flex justify-center items-center space-x-2">
-            <button className="font-extrabold border w-6 h-6 rounded">
-              ID
-            </button>
-            <button className="flex justify-center items-center">
-              <Uis.UisApps className="w-6 h-6" />
-            </button>
-          </div>
-        </nav>
-      </header>
+      <Navbar />
       <main className="text-slate-800">
         <section className="min-h-[calc(100vh_-_68px)]">
           <div className="bg-main-400 pt-10">
@@ -32,8 +17,8 @@ function App() {
               <div className="hidden md:block">
                 <h1 className="text-xl font-bold mb-1 text-alt-400">Muh. Fachry J.K. Luid</h1>
                 <h2 className="text-4xl font-semibold mb-1 text-white">Junior Developer</h2>
-                <p className="mb-3 text-justify text-lg text-white">Seorang freelancer yang punya passion di bidang pengembangan perangkat lunak.</p>
-                <button onClick={() => scollToRef.current.scrollIntoView({behavior:"smooth"})} className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold text-lg rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
+                <p className="mb-3 text-justify text-lg text-white">Seorang <i>freelancer</i> yang punya passion di bidang pengembangan perangkat lunak.</p>
+                <button onClick={() => scollToRef.current.scrollIntoView({ behavior: "smooth" })} className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold text-lg rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
                   <span>Hubungi Saya</span>
                   <Uil.UilEnvelope />
                 </button>
@@ -45,7 +30,7 @@ function App() {
             <h1 className="text-xl text-main-400 font-bold mb-1">Muh. Fachry J.K. Luid</h1>
             <h2 className="text-4xl font-semibold mb-1">Junior Developer</h2>
             <p className="mb-3 text-justify text-lg">Seorang freelancer yang punya passion di bidang pengembangan perangkat lunak.</p>
-            <button onClick={() => scollToRef.current.scrollIntoView({behavior:"smooth"})} className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold text-lg rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
+            <button onClick={() => scollToRef.current.scrollIntoView({ behavior: "smooth" })} className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold text-lg rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
               <span>Hubungi Saya</span>
               <Uil.UilEnvelope />
             </button>
@@ -81,7 +66,7 @@ function App() {
                   <span className="text-sm font-semibold">React Native</span>
                 </div>
                 <div className="flex items-center space-x-2 border-2 border-[#ff2d20] py-1 px-2 rounded-lg">
-                <span className="w-5"><img src="laravel.svg" alt="Tailwind CSS" /></span>
+                  <span className="w-5"><img src="laravel.svg" alt="Tailwind CSS" /></span>
                   <span className="text-sm font-semibold">Laravel</span>
                 </div>
               </div>
@@ -150,9 +135,9 @@ function App() {
                 </div>
               </a>
             </div>
-            <button className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
+            <Link to="/projects" className="flex items-center space-x-2 bg-alt-400 px-5 py-2 font-bold rounded-lg border-[3px] border-black shadow-[0.1em_0.1em] hover:shadow-[0.15em_0.15em] hover:translate-x-[-0.05em] hover:translate-y-[-0.05em] active:shadow-[0.05em_0.05em] active:translate-x-[0.05em] active:translate-y-[0.05em]">
               Lainnya
-            </button>
+            </Link>
           </div>
         </section>
         <div className="bg-main-400/75 h-3"></div>
@@ -208,5 +193,3 @@ function App() {
     </>
   )
 }
-
-export default App
