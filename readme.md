@@ -1,20 +1,13 @@
 ### About Me
-Hi, I'm Fachry. I graduated with a Bachelor's degree in Informatics Engineering from <a href="https://ung.ac.id">Universitas Negeri Gorontalo</a>. As a full-time freelancer, I specialize in software development, focusing on web and mobile applications.
 
-While still in university, I started my journey as a freelancer in 2022, creating and maintaining software solutions for various clients. One notable project is the website for a private school in Gorontalo, which you can check out at <a href="https://ssnb.sch.id">ssnb.sch.id</a>. Additionally, you can explore other projects I've worked on at my personal website <a href="https://fachryluid.site">fachryluid.site</a>.
+Hi, I'm Fachry — a software engineer.
 
-<p align="center">
-  <a href="https://github.com/fachiri?tab=repositories">
-    <img
-      align="center"
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=fachryluid&layout=compact"
-    />
-  </a>
-  <a href="https://github.com/fachiri?tab=repositories">
-    <img
-      align="center"
-      height="165"
-      src="https://github-readme-stats.vercel.app/api?username=fachryluid&count_private=true&show_icons=true&custom_title=Github%20Status&hide=issues"
-    />
-  </a>
-</p>
+I currently work full-time as a **Pranata Komputer at Diskominfo Buol**, where I manage servers and contribute to the development of various software solutions. In addition to my main role, I also work as a **contract Software Engineer at [AI-Lab](https://ai-lab.id)**, focusing on building and improving AI-driven products.
+
+Beyond my full-time commitments, I remain active as a **freelance developer**, handling projects in:
+
+- Frontend development (Web & Mobile)  
+- Backend development  
+- Fullstack application development
+
+My journey in software development began in 2022 while I was still in university, and since then I’ve been involved in building and maintaining applications for clients across different sectors. You can explore more of my work and projects on my personal website: [fachryluid.site](https://fachryluid.site)
