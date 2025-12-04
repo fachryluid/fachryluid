@@ -1,6 +1,4 @@
-### About Me
-
-Hi, I'm Fachry — a software engineer.
+### Hi, I'm Fachry — a software engineer.
 
 I currently work full-time as a **Pranata Komputer at Diskominfo Buol**, where I manage servers and contribute to the development of various software solutions. In addition to my main role, I also work as a **contract Software Engineer at [AI-Lab](https://ai-lab.id)**, focusing on building and improving AI-driven products.
 
